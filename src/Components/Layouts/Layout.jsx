@@ -31,9 +31,9 @@ function Layout({ children }) {
 
       {/* footer */}
       <div className="fixed bottom-10 left-0 right-0">
-        <div className="flex ">
+        <div className="flex w-full justify-center">
           {menuItems.map((item) => (
-            <div>
+            <div className="mx-10">
               <Link to={`${item.path}`}>{item.title}</Link>
             </div>
           ))}
