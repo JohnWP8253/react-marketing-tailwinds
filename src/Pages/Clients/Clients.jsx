@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Layout from "../../Components/Layouts/Layout";
 
 function Clients() {
   return (
-    <div>Clients</div>
-  )
+    <Layout>
+      <div>Clients</div>
+    </Layout>
+  );
 }
 
-export default Clients
+export default Clients;
