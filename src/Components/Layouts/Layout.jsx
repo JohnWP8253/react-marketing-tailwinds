@@ -32,9 +32,9 @@ function Layout({ children }) {
       {/* footer */}
       <div className="fixed bottom-10 left-0 right-0">
         <div className="flex w-full justify-center">
-          {menuItems.map((item) => (
-            <div className="mx-10">
-              <Link to={`${item.path}`}>{item.title}</Link>
+          {menuItems.map((item, index) => (
+            <div className={`px-20 bg-primary py-5 ${index===0 && 'rounded-l'} ${index===menuItems.length-1 && 'rounded-r'}`}>
+              <Link to={`${item.path}`} className='text-secondary'>{item.title}</Link>
             </div>
           ))}
         </div>
